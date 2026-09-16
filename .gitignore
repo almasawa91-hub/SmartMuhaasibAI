@@ -1,0 +1,44 @@
+# Flutter / Dart
+.dart_tool/
+.packages
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/pubspec.lock
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# Android
+android/.gradle/
+android/captures/
+android/local.properties
+android/**/*.keystore
+android/**/*.jks
+android/key.properties
+
+# iOS (غير مستهدف حاليًا لكن يُستبعد احتياطًا)
+ios/Pods/
+ios/.symlinks/
+
+# أسرار ومفاتيح - لا يجب رفعها إلى GitHub أبدًا
+*.env
+secrets.dart
+**/google-services.json
+**/GoogleService-Info.plist
+
+# نظام التشغيل
+.DS_Store
+Thumbs.db
+
+# قواعد بيانات محلية للتطوير/الاختبار
+*.db
+*.sqlite
+
+# مخرجات البناء
+*.apk
+*.aab

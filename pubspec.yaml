@@ -1,0 +1,53 @@
+name: shop_manager
+description: >
+  نظام إدارة ومحاسبة شامل للمحل: عملاء، موردين، مبيعات، مشتريات، مخزون،
+  مواعيد، وعود سداد، وتذكيرات ذكية. يعمل بدون إنترنت (Offline-First).
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+  flutter: ">=3.19.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+
+  # قاعدة البيانات المحلية
+  sqflite: ^2.3.2
+  path: ^1.9.0
+
+  # التهيئة الدولية (تواريخ، أرقام، عملات، RTL)
+  intl: ^0.19.0
+
+  # معرفات فريدة (لمنع تكرار التذكيرات - Idempotency)
+  uuid: ^4.3.3
+
+  # تخزين إعدادات بسيطة (آخر مستخدم، آخر نسخة احتياطية...)
+  shared_preferences: ^2.2.2
+
+  # الإشعارات المحلية للتذكيرات
+  flutter_local_notifications: ^17.1.2
+  timezone: ^0.9.2
+
+  # فتح واتساب / الاتصال الهاتفي
+  url_launcher: ^6.2.5
+
+  # اختيار مسار للنسخ الاحتياطي / الاستعادة
+  file_picker: ^8.0.0+1
+  share_plus: ^9.0.0
+
+  # حالة التطبيق (بسيطة وواضحة - Provider فقط)
+  provider: ^6.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  sqflite_common_ffi: ^2.3.3 # لتشغيل اختبارات قاعدة البيانات على الحاسوب (CI)
+
+flutter:
+  uses-material-design: true
