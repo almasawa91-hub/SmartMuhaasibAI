@@ -46,7 +46,7 @@ class _DashboardPageState extends State<DashboardPage> {
             return ListView(
               padding: const EdgeInsets.only(bottom: 24),
               children: [
-                _SectionTitle('العملاء والموردون'),
+                const _SectionTitle('العملاء والموردون'),
                 _grid([
                   StatCard(label: 'إجمالي العملاء', value: AppFormatters.number(s.totalCustomers), icon: Icons.people),
                   StatCard(label: 'إجمالي الموردين', value: AppFormatters.number(s.totalSuppliers), icon: Icons.local_shipping),
@@ -63,14 +63,14 @@ class _DashboardPageState extends State<DashboardPage> {
                     color: s.totalPayable > 0 ? Colors.red.shade700 : null,
                   ),
                 ]),
-                _SectionTitle('حركة اليوم المالية'),
+                const _SectionTitle('حركة اليوم المالية'),
                 _grid([
                   StatCard(label: 'المقبوضات اليوم', value: AppFormatters.currency(s.paymentsInToday, currency), icon: Icons.download, color: Colors.green.shade700),
                   StatCard(label: 'المدفوعات اليوم', value: AppFormatters.currency(s.paymentsOutToday, currency), icon: Icons.upload, color: Colors.red.shade700),
                   StatCard(label: 'المصروفات اليوم', value: AppFormatters.currency(s.expensesToday, currency), icon: Icons.money_off),
                   StatCard(label: 'الإيرادات اليوم', value: AppFormatters.currency(s.revenuesToday, currency), icon: Icons.attach_money),
                 ]),
-                _SectionTitle('المخزون'),
+                const _SectionTitle('المخزون'),
                 _grid([
                   StatCard(label: 'قيمة المخزون', value: AppFormatters.currency(s.inventoryValue, currency), icon: Icons.inventory_2),
                   StatCard(
@@ -86,7 +86,7 @@ class _DashboardPageState extends State<DashboardPage> {
                     color: s.outOfStockCount > 0 ? Colors.red.shade700 : null,
                   ),
                 ]),
-                _SectionTitle('المواعيد والتذكيرات'),
+                const _SectionTitle('المواعيد والتذكيرات'),
                 _grid([
                   StatCard(label: 'مواعيد اليوم', value: AppFormatters.number(s.appointmentsToday), icon: Icons.event),
                   StatCard(
