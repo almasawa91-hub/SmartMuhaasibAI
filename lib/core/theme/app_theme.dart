@@ -47,7 +47,7 @@ class AppTheme {
       ),
       navigationBarTheme: NavigationBarThemeData(
         backgroundColor: AppColors.surface,
-        indicatorColor: AppColors.primary.withOpacity(0.15),
+        indicatorColor: AppColors.primary.withValues(alpha: 0.15),
         elevation: 2,
       ),
       dividerTheme: const DividerThemeData(space: 1, thickness: 0.6),
